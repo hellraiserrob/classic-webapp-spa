@@ -1,0 +1,16 @@
+//- page-a.pug
+extends ../layout.pug
+
+block vars
+	- var title='Test'
+	- var active='test'
+	- var todos = [{name: 'Something'}]
+
+block content
+	h1 #{title}
+	div#app
+	div#todo
+		ul
+			for todo in todos
+				li= todo.name
+	

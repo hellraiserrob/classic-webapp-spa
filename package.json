@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ignore-styles ./src/scripts/**/*.test.js ",
-    "dev": "webpack-dev-server --env=dev --progress --profile --open",
+    "dev": "webpack-dev-server --env=dev --progress --profile",
     "build": "webpack --env=prod --progress --profile --colors",
     "demo": "http-server ./dist -o"
   },

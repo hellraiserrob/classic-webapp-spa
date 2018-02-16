@@ -1,0 +1,17 @@
+//- page-a.pug
+extends ../layout.pug
+
+block vars
+	- var title='index'
+	- var active='index'
+
+block content
+	h1 Home
+	
+	div
+		img(src=require("../../images/test.jpg"))
+
+	div.test
+		| Test bg element
+
+	div#app

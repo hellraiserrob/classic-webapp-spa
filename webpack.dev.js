@@ -71,16 +71,12 @@ module.exports = {
     }, {
       test: /\.css$/,
       use: ExtractTextPlugin.extract({
-        use: 'css-loader'
+        use: ['css-loader', 'postcss-loader']
       })
     }, {
       test: /\.scss$/,
       use: ExtractTextPlugin.extract({
-        use: [{
-          loader: 'css-loader'
-        }, {
-          loader: 'sass-loader'
-        }]
+        use: ['css-loader', 'postcss-loader', 'sass-loader']
       })
     }, {
       test: /\.pug$/,

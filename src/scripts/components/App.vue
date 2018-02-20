@@ -31,6 +31,7 @@ $color: #eee;
   border: 1px solid $color;
   padding: 20px;
 }
+
 </style>
 
 
